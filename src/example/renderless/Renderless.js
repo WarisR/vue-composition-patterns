@@ -1,6 +1,7 @@
 import Vue from 'vue';
 
-const Renderless = Vue.component('Renderless', {
+const ExampleRenderless = Vue.extend({
+  name: 'ExampleRenderless',
   render() {
     return this.$scopedSlots.default({
       isShow: this.isShow,
@@ -23,4 +24,4 @@ const Renderless = Vue.component('Renderless', {
   },
 });
 
-export default Renderless;
+export default ExampleRenderless;

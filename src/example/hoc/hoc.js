@@ -2,7 +2,7 @@ import Vue from 'vue';
 
 const hoc = (component) => {
   const originalProps = component.props || [];
-  return Vue.component('HoC', {
+  return Vue.extend({
     render(createElement) {
       return createElement(component, {
         components: this.components,

@@ -13,7 +13,7 @@
     <HoCExample />
 
     <h1>Renderless component Example</h1>
-    <RenderlessExample />
+    <RenderlessIntegratedExample />
 
     <h1>Hook Example</h1>
     <HookExample />
@@ -27,7 +27,7 @@ import PlainExample from './example/original/PlainExample.vue';
 import PlainExample2 from './example/original/PlainExample2.vue';
 import MixinsExample from './example/mixins/MixinsExample.vue';
 import HoCExample from './example/hoc/HoCExample.vue';
-import RenderlessExample from './example/renderless/RenderlessExample.vue';
+import RenderlessIntegratedExample from './example/renderless/RenderlessIntegratedExample.vue';
 import HookExample from './example/hook/HookExample.vue';
 
 Vue.component('MyDropdown', MyDropdown);
@@ -38,7 +38,7 @@ export default Vue.extend({
     PlainExample2,
     MixinsExample,
     HoCExample,
-    RenderlessExample,
+    RenderlessIntegratedExample,
     HookExample,
   },
 });

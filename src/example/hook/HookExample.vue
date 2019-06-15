@@ -1,18 +1,18 @@
 <template>
   <MyDropdown
-    :toggle="hookProps.toggle"
-    :isShow="hookProps.isShow"
-    :collapse="hookProps.collapse"
+    :toggle="dropdown.toggle"
+    :isShow="dropdown.isShow"
+    :collapse="dropdown.collapse"
   />
 </template>
 
 <script>
 import Vue from 'vue';
-import createHook from './hook';
+import useDropdown from './useDropdown';
 
 const exampleComponent = Vue.extend({
   data() {
-    return { hookProps: createHook() };
+    return { dropdown: useDropdown(this) };
   },
 });
 
